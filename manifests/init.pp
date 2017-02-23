@@ -197,7 +197,7 @@ class sonarqube (
 
     file {
       '/etc/systemd/system/sonar.service':
-        content => file('maestrodev-sonarqube/ubuntu_sonar.service'),
+        content => file('sonarqube/ubuntu_sonar.service'),
         require    => File["/etc/init.d/${service}"]
     } -> service { 'sonarqube':
       ensure     => running,
