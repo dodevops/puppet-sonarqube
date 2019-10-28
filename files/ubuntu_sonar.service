@@ -24,3 +24,4 @@ RemainAfterExit=yes
 ExecStart=/etc/init.d/sonar start
 ExecStop=/etc/init.d/sonar stop
 User=sonar
+LimitNOFILE=65536
